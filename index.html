@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="nofollow, noindex">
+    <meta name="description" content="The HTML reference describes all elements and attributes of HTML, including global attributes that apply to all elements.">
+    <title>Aula de programação Web - Contato</title>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <h1>Área de Contato do Cliente</h1>
+        
+        <nav class="menu">
+            <a href="#">Ajuda</a> | 
+            <a href="#">Sair</a>
+        </nav>
+    </header>
+
+    <main id="corpo-da-pagina">
+        <article class="secao-contato">
+            <header class="subtitulo">
+                <h2>Envie sua mensagem para a nossa equipe de suporte backend</h2>
+            </header>
+            
+            <form id="formulario" action="/enviar" method="POST">
+                <label for="nome">Nome:</label>
+                <input 
+                    type="text" 
+                    id="nome" 
+                    name="nome" 
+                    required 
+                    minlength="3"
+                ><br><br>
+
+                <label for="email">Email:</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    minlength="5"
+                ><br><br>
+
+                <label for="celular">Telefone Celular:</label>
+                <input 
+                    type="tel" id="celular" name="celular" pattern="[0-9]{11}" required
+                ><br><br>
+
+                <label for="msg">Mensagem:</label><br>
+                <textarea id="msg" name="msg"></textarea><br><br>
+                
+                <button type="submit" id="botao">Disparar Dados</button>
+            </form>
+        </article>
+    </main>
+
+    <footer id="rodape">
+        <p>&copy; Suporte Tech 2026</p>
+    </footer>
+</body>
+</html>
