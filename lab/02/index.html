@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Exemplo formulario para busca no google">
+    <meta name="keywords" content="html, formulario, google">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Rodrigo Marques">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1 class="titulo">Abrir Chamado Técnico</h1>
+</head>
+
+<body>
+    <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data" onsubmit="alert('Enviado')">
+        <fieldset class="campo">
+            <label>Nome Completo:</label>
+            <input type="text" name="nome" required>
+            <br>
+            <label>E-mail de Contato:</label>
+            <input type="email" name="email" required>
+            <br>
+            <label>Prioridade:</label>
+            <select name="prioridade">
+                <option>Baixa</option>
+                <option>Média</option>
+                <option>Alta</option>
+            <br>
+            <label>Arquivo de Log ou Print (PNG/PDF):</label>
+            <input type="file" name="anexo" accept="image/png,application/pdf aria-describedby="instrucao-arquivo">
+            <br>
+            </select>
+            <button type="submit" value="Enviar">Enviar Chamado</button>
+        </fieldset>
+    </form>
+</body>
