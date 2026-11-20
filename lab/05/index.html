@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Horária de Aulas e Apresentação do Módulo | IFF</title>
+</head>
+<body>
+    
+    <!-- MÓDULO 5: HORÁRIOS DAS AULAS (TABELA SEMÂNTICA) -->
+    <section class="bloco-cronograma">
+        <h2 class="titulo-seccao">Horários acadêmicos</h2>
+        
+        <table>
+            <!-- O <caption> deve ser o PRIMEIRO elemento dentro de <table> -->
+            <caption>Grade horária das aulas do módulo</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Aula</th>
+                    <th scope="col">Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Estruturação Multimídia</td>
+                    <td>19:00 - 20:30</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h3>Recursos necessários:</h3>
+        <ul>
+            <li>Computador com IDE configurada</li>
+            <li>Arquivos de legenda (.vtt) prontos</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- MÓDULO 6: CONTEÚDO INTEGRADO (ACESSIBILIDADE E SEGURANÇA) -->
+    <section class="bloco-video">
+        <h2>Apresentação da Disciplina</h2>
+        
+        <figure>
+            <video controls width="640" height="360">
+                <source src="apresentacao.mp4" type="video/mp4">
+                <track src="legendas.vtt" 
+                kind="captions" 
+                srclang="pt-BR" 
+                label="Português" 
+                default>
+                Seu navegador não suporta a reprodução de vídeos HTML5.
+            </video>
+            <figcaption>Vídeo de apresentação da disciplina de Programação Web</figcaption>
+        </figure>
+    </section>
+
+    <section class="bloco-mapa">
+        <h2>Localização do Campus IFF</h2>
+        
+        <figure>
+            <iframe 
+                src="https://mapas.iff.edu.br" 
+                title="Mapa interativo mostrando a localização do Campus IFF"
+                sandbox="allow-scripts allow-same-origin"
+                width="600" 
+                height="450" 
+                loading="lazy">
+            </iframe>
+            <figcaption>Mapa interativo do campus do IFF</figcaption>
+        </figure>
+    </section>
+
+</body>
+</html>
